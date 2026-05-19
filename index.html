@@ -1,96 +1,234 @@
 <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 시대 사수 없는 마케터를 위한 질문 수업</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBg: '#f2ede7',
+                        brandSub: '#eae7e0',
+                        brandPoint: '#dc3a46',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #f2ede7; color: #333; }
+        .fade-in { animation: fadeIn 1s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .btn-hover:hover { transform: scale(1.05); transition: all 0.3s; }
+    </style>
+</head>
+<body class="font-sans">
 
-      </div>
-
-    </div>
-  </section>
-
-  <!-- PROOF -->
-  <section id="proof" class="section">
-    <div class="container narrow">
-
-      <span class="section-label">Proof</span>
-
-      <h2>
-        혼자 일하는 마케터를 위한 현실적인 가이드
-      </h2>
-
-      <div class="review-grid">
-
-        <div class="review-card">
-          <p>
-            “AI를 어떻게 써야 할지 몰랐는데,
-            질문 구조 자체를 이해하게 됐어요.”
-          </p>
-          <span>현직 콘텐츠 마케터</span>
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-brandBg/80 backdrop-blur-md border-b border-brandSub px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="font-black text-xl tracking-tighter text-brandPoint">MARKETER'S BOOK</div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#problem" class="hover:text-brandPoint">문제제기</a>
+                <a href="#solution" class="hover:text-brandPoint">해결책</a>
+                <a href="#cta" class="bg-brandPoint text-white px-4 py-2 rounded-full">구매하기</a>
+            </div>
         </div>
+    </nav>
 
-        <div class="review-card">
-          <p>
-            “보고서 자동화 때문에 야근 시간이 줄었습니다.”
-          </p>
-          <span>광고대행사 AE</span>
+    <!-- HERO Section -->
+    <section class="relative min-h-[80vh] flex items-center justify-center px-6 py-20 overflow-hidden">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="fade-in">
+                <span class="inline-block px-4 py-1 bg-brandPoint text-white text-xs font-bold mb-4 rounded-full">신간 출시</span>
+                <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6">
+                    사수 없는 AI 시대,<br><span class="text-brandPoint">질문이 곧 실력</span>입니다.
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    변화하는 마케팅 환경에서 살아남는 법. <br>
+                    이효정 저자가 제안하는 마케터의 생존 전략, <br>
+                    <strong>&lt;AI 시대 사수 없는 마케터를 위한 질문 수업&gt;</strong>
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#cta" class="btn-hover bg-brandPoint text-white px-8 py-4 rounded-lg font-bold shadow-lg">지금 바로 시작하기</a>
+                </div>
+            </div>
+            <div class="relative flex justify-center fade-in">
+                <!-- 도서 입체 이미지 플레이스홀더 -->
+                <div class="w-64 h-96 bg-brandSub shadow-2xl rounded-r-lg border-l-8 border-brandPoint flex items-center justify-center text-center p-6">
+                    <p class="font-bold text-gray-400 text-sm">BOOK COVER<br>IMAGE AREA</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="review-card">
-          <p>
-            “비개발자도 따라할 수 있게 설명돼 있어서 좋았습니다.”
-          </p>
-          <span>브랜드 마케터</span>
+    <!-- Problem Section -->
+    <section id="problem" class="bg-brandSub py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">혹시 이런 고민을 하고 계신가요?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="text-brandPoint text-3xl mb-4"><i class="fas fa-ghost"></i></div>
+                    <p class="font-medium">"AI는 들어봤는데, 업무 어디에 써야 할지 모르겠어요."</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="text-brandPoint text-3xl mb-4"><i class="fas fa-user-slash"></i></div>
+                    <p class="font-medium">"가르쳐줄 사수는 없고 성과는 내야 하는데 막막합니다."</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="text-brandPoint text-3xl mb-4"><i class="fas fa-clock"></i></div>
+                    <p class="font-medium">"단순 반복 업무 때문에 전략을 짤 시간이 부족해요."</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-      </div>
+    <!-- Solution Section (n8n 시연) -->
+    <section id="solution" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1">
+                    <h2 class="text-brandPoint font-bold mb-2">The Solution</h2>
+                    <h3 class="text-3xl font-bold mb-6">마케터의 무기, n8n 자동화 워크플로우</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        단순히 질문하는 법을 넘어, <strong>n8n</strong>을 활용해 마케팅 프로세스를 자동화하는 구체적인 실무 레시피를 공개합니다. 이제 지루한 업무는 AI에게 맡기고 당신은 '기획'에 집중하세요.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-brandPoint"></i> 복잡한 코딩 없는 노코드 자동화</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-brandPoint"></i> 맞춤형 질문 프롬프트 구성법</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check-circle text-brandPoint"></i> 실무 적용 즉시 가능한 템플릿 제공</li>
+                    </ul>
+                </div>
+                <div class="flex-1 bg-gray-900 rounded-xl p-4 shadow-2xl">
+                    <!-- n8n 시연 이미지 또는 GIF 플레이스홀더 -->
+                    <div class="aspect-video bg-gray-800 rounded flex items-center justify-center text-white text-sm">
+                        [ n8n Workflow 시연 영상/이미지 영역 ]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Feature Section -->
+    <section class="bg-white py-24 px-6 border-y border-brandSub">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 text-center">
+            <div>
+                <h4 class="text-4xl font-black text-brandPoint mb-2">01</h4>
+                <p class="font-bold">기본 개념</p>
+                <p class="text-sm text-gray-500 mt-2">AI 시대 마케터의 필수 역량 정의</p>
+            </div>
+            <div>
+                <h4 class="text-4xl font-black text-brandPoint mb-2">02</h4>
+                <p class="font-bold">질문의 기술</p>
+                <p class="text-sm text-gray-500 mt-2">정확한 아웃풋을 뽑아내는 질문 설계</p>
+            </div>
+            <div>
+                <h4 class="text-4xl font-black text-brandPoint mb-2">03</h4>
+                <p class="font-bold">툴 활용법</p>
+                <p class="text-sm text-gray-500 mt-2">n8n, ChatGPT 실무 최적화 세팅</p>
+            </div>
+            <div>
+                <h4 class="text-4xl font-black text-brandPoint mb-2">04</h4>
+                <p class="font-bold">실전 케이스</p>
+                <p class="text-sm text-gray-500 mt-2">업무 효율을 10배 높이는 사례 분석</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof Section -->
+    <section class="py-24 px-6 bg-brandBg">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">이미 많은 마케터들이 추천하고 있습니다</h2>
+            <div class="grid md:grid-cols-2 gap-6 text-left">
+                <div class="bg-white p-6 rounded-xl border border-brandSub">
+                    <p class="italic text-gray-600 mb-4">"막연했던 AI 활용이 이 책을 보고 명확해졌습니다. 특히 질문 설계법이 압권입니다."</p>
+                    <p class="font-bold text-sm">- 퍼포먼스 마케터 김OO -</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-brandSub">
+                    <p class="italic text-gray-600 mb-4">"n8n 자동화 파트를 보고 하루 3시간 걸리던 업무가 10분으로 줄었습니다."</p>
+                    <p class="font-bold text-sm">- 콘텐츠 매니저 이OO -</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-24 px-6 bg-brandPoint text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4">지금 당신의 커리어를 자동화하세요</h2>
+            <p class="mb-12 opacity-90 text-lg">전국의 온/오프라인 서점에서 만나보실 수 있습니다.</p>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="https://search.kyobobook.co.kr/search?keyword=AI%20시대%20사수%20없는%20마케터" target="_blank" class="bg-white text-brandPoint px-10 py-4 rounded-full font-black text-lg btn-hover shadow-xl">교보문고</a>
+                <a href="https://www.yes24.com/Product/Search?query=AI%20시대%20사수%20없는%20마케터" target="_blank" class="bg-white text-brandPoint px-10 py-4 rounded-full font-black text-lg btn-hover shadow-xl">YES24</a>
+                <a href="https://www.aladin.co.kr/search/wsearchresult.aspx?SearchTarget=All&SearchWord=AI+시대+사수+없는+마케터" target="_blank" class="bg-white text-brandPoint px-10 py-4 rounded-full font-black text-lg btn-hover shadow-xl">알라딘</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-brandSub text-center text-gray-500 text-sm">
+        <p>&copy; 2024 이효정 &lt;AI 시대 사수 없는 마케터를 위한 질문 수업&gt;. All rights reserved.</p>
+        <div class="mt-4 space-x-4">
+            <a href="#" class="hover:text-brandPoint">개인정보처리방침</a>
+            <a href="#" class="hover:text-brandPoint">인스타그램</a>
+        </div>
+    </footer>
+
+    <!-- 관리자 모드 버튼 (개발 단계 및 수정용) -->
+    <div id="admin-panel-toggle" onclick="toggleAdmin()" class="fixed bottom-5 right-5 w-10 h-10 bg-black/20 rounded-full flex items-center justify-center cursor-pointer text-white hover:bg-black/50 transition-all">
+        <i class="fas fa-cog"></i>
     </div>
-  </section>
 
-  <!-- CTA -->
-  <section id="cta" class="cta-section">
-    <div class="container narrow center">
-
-      <h2>
-        AI 시대,
-        질문을 잘하는 사람이 살아남습니다.
-      </h2>
-
-      <p>
-        지금 온라인 서점에서 바로 확인하세요.
-      </p>
-
-      <div class="cta-buttons">
-
-        <a href="https://www.kyobobook.co.kr"
-           target="_blank"
-           class="store-btn">
-           교보문고
-        </a>
-
-        <a href="https://www.yes24.com"
-           target="_blank"
-           class="store-btn">
-           YES24
-        </a>
-
-        <a href="https://www.aladin.co.kr"
-           target="_blank"
-           class="store-btn">
-           알라딘
-        </a>
-
-      </div>
-
+    <!-- 심플 관리자 오버레이 -->
+    <div id="admin-overlay" class="fixed inset-0 bg-black/80 z-[100] hidden flex items-center justify-center p-6">
+        <div class="bg-white w-full max-w-2xl max-h-[80vh] overflow-y-auto p-8 rounded-2xl">
+            <h2 class="text-2xl font-bold mb-6">콘텐츠 커스터마이징 (관리자)</h2>
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-sm font-bold mb-1">헤드라인 수정</label>
+                    <input type="text" id="edit-title" class="w-full border p-2 rounded" placeholder="메인 타이틀 입력">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-1">포인트 컬러 변경</label>
+                    <input type="color" id="edit-color" class="w-full h-10 border p-1 rounded" value="#dc3a46">
+                </div>
+                <div class="flex gap-4">
+                    <button onclick="saveChanges()" class="flex-1 bg-brandPoint text-white py-3 rounded font-bold">적용하기</button>
+                    <button onclick="toggleAdmin()" class="flex-1 bg-gray-200 py-3 rounded font-bold">닫기</button>
+                </div>
+                <p class="text-xs text-gray-400 mt-4">* 이 관리자 창은 Vs Code에서 `content.js` 데이터를 시각적으로 확인하는 용도입니다. 실제 영구 저장은 `content.js` 파일을 직접 수정하거나 로컬 스토리지를 활용합니다.</p>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-wrap">
-      <p>
-        © 2026 AI 시대 사수 없는 마케터를 위한 질문 수업
-      </p>
-    </div>
-  </footer>
+    <script>
+        function toggleAdmin() {
+            const overlay = document.getElementById('admin-overlay');
+            overlay.classList.toggle('hidden');
+        }
 
-  <script src="script.js"></script>
+        function saveChanges() {
+            const newTitle = document.getElementById('edit-title').value;
+            const newColor = document.getElementById('edit-color').value;
+            
+            if(newTitle) document.querySelector('h1').innerHTML = newTitle.replace('\n', '<br>');
+            if(newColor) {
+                document.querySelectorAll('.text-brandPoint').forEach(el => el.style.color = newColor);
+                document.querySelectorAll('.bg-brandPoint').forEach(el => el.style.backgroundColor = newColor);
+                document.querySelectorAll('.border-brandPoint').forEach(el => el.style.borderColor = newColor);
+            }
+            toggleAdmin();
+            alert('설정이 화면에 반영되었습니다. (영구 저장을 원하시면 소스 코드를 수정하세요)');
+        }
+    </script>
 </body>
 </html>
