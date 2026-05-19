@@ -1,0 +1,82 @@
+* {
+  font-weight: 800;
+}
+
+.feature-list {
+  margin-top: 60px;
+  display: grid;
+  gap: 24px;
+}
+
+.feature-item {
+  background: white;
+  padding: 28px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.feature-icon {
+  width: 42px;
+  height: 42px;
+  background: #dc3a46;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-section {
+  padding: 140px 0;
+  background: #dc3a46;
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+.cta-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.store-btn {
+  background: white;
+  color: #dc3a46;
+}
+
+.footer {
+  padding: 40px 0;
+}
+
+.footer-wrap {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  .hero-grid,
+  .problem-grid,
+  .solution-grid,
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 120px 0;
